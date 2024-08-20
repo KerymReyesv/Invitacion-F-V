@@ -20,7 +20,7 @@ body{
 }
 
 
-@media (min-width: 412px) and (max-width: 916px) {
+@media (min-width: 375px) and (max-width: 916px) {
   
   body{
     padding: 0;
@@ -70,7 +70,7 @@ body{
 /****************** MEDIA QUERIES NAVBAR ********************/
 
 
-@media (min-width: 412px) and (max-width: 916px) {
+@media (min-width: 375px) and (max-width: 916px) {
   
   html{
     scroll-behavior: smooth;
@@ -164,7 +164,7 @@ body{
 /****************** MEDIA QUERIES HEADER ********************/
 
 
-@media (min-width: 412px) and (max-width: 916px) {
+@media (min-width: 375px) and (max-width: 916px) {
   
   .header{
       
@@ -217,7 +217,7 @@ body{
 
 /****************** MEDIA QUERIES COUNTDOWN ********************/
 
-@media (min-width: 412px) and (max-width: 916px){
+@media (min-width: 375px) and (max-width: 916px){
 
       .countdown {
         flex-direction: column; /* Cambiar a columna en móviles */
@@ -263,7 +263,7 @@ body{
 
 /****************** MEDIA QUERIES PADRES ********************/
 
-@media (min-width: 412px) and (max-width: 916px){
+@media (min-width: 375px) and (max-width: 916px){
 
   .padres h2{
     font-size: 2rem;
@@ -332,7 +332,7 @@ body{
 
 /****************** MEDIA QUERIES UBICACION ********************/
 
-@media (min-width: 412px) and (max-width: 916px){
+@media (min-width: 375px) and (max-width: 916px){
 
   .titulo{
     margin-bottom: -20%;
@@ -632,7 +632,7 @@ body{
 
 /****************** MEDIA QUERIES SECTION PLAYLIST SPOTIFY ********************/
 
-@media (min-width: 412px) and (max-width: 916px){
+@media (min-width: 375px) and (max-width: 916px){
 
     .titulo-playlist h2{
       font-size: 2rem;
@@ -668,7 +668,7 @@ body{
 
 /****************** MEDIA QUERIES SECTION SOBRE ********************/
 
-@media (min-width: 412px) and (max-width: 916px){
+@media (min-width: 375px) and (max-width: 916px){
 
   #regalo{
     font-size: 2rem;
@@ -826,7 +826,7 @@ body{
 
 /****************** MEDIA QUERIES SECTION PAGO EN LINEA ********************/
 
-@media (min-width: 412px) and (max-width: 916px){
+@media (min-width: 375px) and (max-width: 916px){
 
   .flip-card-front{
     left: -750px;
@@ -857,7 +857,7 @@ body{
 
 /****************** MEDIA QUERIES ********************/
 
-@media (min-width: 412px) and (max-width: 916px){
+@media (min-width: 375px) and (max-width: 916px){
 
   .titulo-asistencia{
     font-size: 3rem;
