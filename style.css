@@ -90,17 +90,8 @@ body{
   }
   .rsvp button{
     width: 100%;
-    font-size: 12px;
+    font-size: 8px;
   }
-
-  .navbar a {
-    flex: 1 1 100%; /* Hace que los enlaces se ajusten al ancho del contenedor */
-}
-.navbar {
-  display: flex;
-  flex-wrap: wrap; /* Permite que los elementos se envuelvan si es necesario */
-}
-
    
 }
 
@@ -169,7 +160,7 @@ body{
   .header{
       
       background-position: top; /* La imagen se alinea arriba */
-      height: 32vh; /* Reduce la altura de la sección hero */
+      height: 50vh; /* Reduce la altura de la sección hero */
       padding: 20px; /* Añade padding para dar margen alrededor del contenido */
   }
   .names-hero{
@@ -342,7 +333,7 @@ body{
   }
   .card-ubi{
     width: 80%;
-    height: 45vh;
+    height: 60vh;
   }
   .card-content h3{
     font-size: 16px;
