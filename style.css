@@ -1,0 +1,876 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Great+Vibes&display=swap');
+
+:root {
+  --gradiente-vino: linear-gradient(0deg, rgb(182, 50, 78) 0%, rgba(87,10,27,1) 100%);
+  --gradiente-dorado: linear-gradient(0deg, rgba(244,187,7,1) 0%, rgb(243, 234, 204) 100%);
+}
+* {
+  box-sizing: border-box;
+}
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* background-image: url(img/fondo.png); */
+}
+
+
+@media (min-width: 412px) and (max-width: 916px) {
+  
+  body{
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    width: 100%;
+  }
+
+}
+
+
+/****************** SECTION NAVBAR ********************/
+
+.navbar{
+    background-image: var(--gradiente-vino);
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+.nav-container{
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+}
+.snitch{
+    width: 70px;
+}
+
+.names{
+    font-family: 'Dancing Script';
+    font-size: 50px;
+    background-image: var(--gradiente-dorado);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.names-hero{
+  font-family: 'Dancing Script';
+  font-size: 150px;
+  background-image: var(--gradiente-vino);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.rsvp{
+    margin-top: 1rem;
+}
+
+/****************** MEDIA QUERIES NAVBAR ********************/
+
+
+@media (min-width: 412px) and (max-width: 916px) {
+  
+  html{
+    scroll-behavior: smooth;
+  }
+  .navbar{
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+  }
+  .snitch{
+    width: 10%;
+  }
+  .names{
+    font-size: 24px;
+    margin-top: 16px;
+  }
+  .rsvp button{
+    width: 100%;
+    font-size: 12px;
+  }
+
+  .navbar a {
+    flex: 1 1 100%; /* Hace que los enlaces se ajusten al ancho del contenedor */
+}
+.navbar {
+  display: flex;
+  flex-wrap: wrap; /* Permite que los elementos se envuelvan si es necesario */
+}
+
+   
+}
+
+/****************** SECTION HEADER ********************/
+
+.header{
+  height: 100vh; 
+  background-image:linear-gradient(
+    rgba(0, 0, 0, 0.275), /* Color negro con opacidad del 50% */
+    rgba(0, 0, 0, 0.462) /* Color negro con opacidad del 50% */
+), url('img/hero.jpg');
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat;
+  font-family: 'Dancing Script';
+  z-index: 1;
+  
+}
+.hero{
+  z-index: 98;
+}
+.hero-title{
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  text-align: center; 
+  padding: 30px;
+}
+.hero, h2{
+    width: 100%;
+    font-size: 100px;
+    color: #570a1b;
+}
+.hero-p{
+  width: 100%;
+  font-size: 100px;
+  background: var(--gradiente-dorado);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  text-align: center; 
+}
+.hero-p1{
+  font-family: 'Dancing Script';
+  background-image: var(--gradiente-vino);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  text-align: center; 
+}
+ .span{
+  background-image: var(--gradiente-dorado);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/****************** MEDIA QUERIES HEADER ********************/
+
+
+@media (min-width: 412px) and (max-width: 916px) {
+  
+  .header{
+      
+      background-position: top; /* La imagen se alinea arriba */
+      height: 32vh; /* Reduce la altura de la sección hero */
+      padding: 20px; /* Añade padding para dar margen alrededor del contenido */
+  }
+  .names-hero{
+    font-size: 2rem;
+    margin-top: -30px;
+  }
+  .hero-p{
+    font-size: 2rem;
+  }
+  .hero-p1{
+    font-size: 2rem;
+  }
+}
+
+/******************* SECTION COUNTDOWN **********************/
+
+.countdown {
+  text-align: center;
+}
+
+#countdown-timer {
+  display: flex;
+  justify-content: space-around;
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+#countdown-timer div {
+  background-image: linear-gradient(0deg, rgba(244,187,7,1) 0%, rgb(197, 161, 45) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 60px;
+}
+
+#countdown-timer span {
+  display: block;
+  font-size: 90px;
+  border-radius: 30px;
+  background-image: linear-gradient(0deg, rgba(244,187,7,1) 0%, rgb(197, 161, 45) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/****************** MEDIA QUERIES COUNTDOWN ********************/
+
+@media (min-width: 412px) and (max-width: 916px){
+
+      .countdown {
+        flex-direction: column; /* Cambiar a columna en móviles */
+        margin-top: -25px;
+    }
+
+    #countdown-timer div {
+        font-size: 20px; /* Tamaño de fuente más pequeño */
+        margin-bottom: 10px; /* Espacio entre los elementos */
+    }
+    #countdown-timer span {
+      font-size: 20px; /* Tamaño de fuente más pequeño */
+      margin-bottom: 10px; /* Espacio entre los elementos */
+  }
+
+    #countdown-timer div:last-child {
+        margin-bottom: 0; /* Eliminar margen en el último elemento */
+    }
+
+}
+
+/****************** SECTION PADRES ********************/
+
+.padres{
+    font-family: 'Great Vibes';
+    font-size: 50px;
+    color: #570a1b;
+}
+.padres h2{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 2rem;
+    font-family: 'Great Vibes';
+    font-size: 70px;
+    color: #570a1b;
+}
+.container-names{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2rem;
+}
+
+/****************** MEDIA QUERIES PADRES ********************/
+
+@media (min-width: 412px) and (max-width: 916px){
+
+  .padres h2{
+    font-size: 2rem;
+  }
+  .container-names{
+    display: block;
+    font-size: 50%;
+    margin-left: 1rem;
+  }
+  .names-f{
+    margin-bottom: 20px;
+  }
+
+}
+
+
+/****************** SECTION UBICACION ********************/
+
+.ubi-container{
+    background-color:rgba(252, 244, 236, 0.405) ;
+}
+.card-container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 100px;
+}
+.titulo{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 80px;
+    padding: 10px;
+    font-family: 'Great Vibes';
+    font-size: 70px;
+    color: #570a1b;
+}
+.card-ubi{
+    width: 500px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 30px 20px 5px rgba(0, 0, 0, 0.556);
+    margin: 20px;
+    background-image: linear-gradient(0deg, rgb(182, 50, 78) 0%, rgba(87,10,27,1) 100%);
+    margin-bottom: 70px;
+}
+.card img{
+    width: 100%;
+    height: auto;
+}
+.card-content{
+    padding: 16px;
+}
+.card-content h3{
+    font-size: 25px;
+    margin-bottom: 8px;
+    color: #ffffff;
+}
+.card-content p{
+    color: #ffffff;
+    font-size: 20px;
+    line-height: 1.3;
+    margin: 20px;
+    margin-bottom: 50px;
+}
+
+/****************** MEDIA QUERIES UBICACION ********************/
+
+@media (min-width: 412px) and (max-width: 916px){
+
+  .titulo{
+    margin-bottom: -20%;
+  }  
+  .titulo h2{
+    font-size: 3rem;
+  }
+  .card-ubi{
+    width: 80%;
+    height: 45vh;
+  }
+  .card-content h3{
+    font-size: 16px;
+  }
+  .card-content p{
+    font-size: 16px;
+  }
+}
+
+/***************************** BUTTON UBICACION *************************/ 
+
+.btn-ubi {
+  font-family: inherit;
+  font-size: 20px;
+  background-image: linear-gradient(0deg, rgb(205, 160, 13) 0%, rgb(217, 194, 119) 100%);
+  color: white;
+  padding: 0.7em 1em;
+  padding-left: 0.9em;
+  display: flex;
+  align-items: center;
+  border: none;
+  border-radius: 16px;
+  overflow: hidden;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.btn-ubi span {
+  display: block;
+  margin-left: 0.3em;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-ubi svg {
+  display: block;
+  transform-origin: center center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.btn-ubi:hover .svg-wrapper {
+  animation: fly-1 0.6s ease-in-out infinite alternate;
+}
+
+.btn-ubi:hover svg {
+  transform: translateX(1.2em) rotate(45deg) scale(1.1);
+}
+
+.btn-ubi:hover span {
+  transform: translateX(6em);
+}
+
+.btn-ubi:active {
+  transform: scale(0.95);
+}
+
+@keyframes fly-1 {
+  from {
+    transform: translateY(0.1em);
+  }
+
+  to {
+    transform: translateY(-0.1em);
+  }
+}
+
+/****************** SECTION PLAYLIST SPOTIFY ********************/
+
+.playlist{
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+.card {
+  position: relative;
+  width: 1000px;
+  height: 150px;
+  background: #151515;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.top {
+  position: relative;
+  width: 100%;
+  display: flex;
+  gap: 10px;
+}
+
+.pfp {
+  position: relative;
+  top: 5px;
+  left: 5px;
+  height: 40px;
+  width: 40px;
+  background-color: #d2d2d2;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title-1 {
+  color: white;
+  font-size: 25px;
+  font-weight: bolder;
+  margin-left: 5px;
+}
+
+.title-2 {
+  color: lightgrey;
+  font-size: 12px;
+  font-weight: bold;
+  margin-top: 0px;
+  margin-left: 5px;
+}
+
+.time {
+  width: 90%;
+  background-color: #5e5e5e;
+  height: 6px;
+  border-radius: 3px;
+  position: absolute;
+  left: 5%;
+  bottom: 21px;
+}
+
+.elapsed {
+  width: 42%;
+  background-color: #1db954;
+  height: 100%;
+  border-radius: 3px;
+}
+
+.controls {
+  color: white;
+  display: flex;
+  position: absolute;
+  bottom: 30px;
+  left: 0;
+  width: 100%;
+  justify-content: center;
+}
+
+.volume {
+  height: 100%;
+  width: 50px;
+  margin-right: 2px;
+}
+
+.air {
+  height: 100%;
+  width: 54px;
+}
+
+.controls svg {
+  cursor: pointer;
+  transition: 0.1s;
+  margin-bottom: 5px;
+}
+
+.controls svg:hover {
+  color: #1db954;
+}
+
+.volume {
+  opacity: 0;
+  position: relative;
+  transition: 0.2s;
+}
+
+.volume .slider {
+  height: 4px;
+  background-color: #5e5e5e;
+  width: 80%;
+  border-radius: 2px;
+  margin-top: 8px;
+  margin-left: 10%;
+}
+
+.volume .slider .green {
+  background-color: #1db954;
+  height: 100%;
+  width: 80%;
+  border-radius: 3px;
+}
+
+.volume .circle {
+  background-color: white;
+  height: 6px;
+  width: 6px;
+  border-radius: 3px;
+  position: absolute;
+  right: 20%;
+  top: 60%;
+}
+
+.volume_button:hover ~ .volume {
+  opacity: 1;
+}
+
+.timetext {
+  color: white;
+  font-size: 8px;
+  position: absolute;
+}
+
+.time_now {
+  bottom: 8px;
+  left: 15px;
+}
+
+.time_full {
+  bottom: 8px;
+  right: 14px;
+}
+
+.playing {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  gap: 1px;
+  width: 90px;
+  height: 90px;
+}
+.playing, img{
+  width: 100%;
+  height: auto;
+}
+
+.greenline {
+  background-color: #1db954;
+  height: 20px;
+  width: 2px;
+  position: relative;
+  transform-origin: bottom;
+}
+
+.line-1 {
+  animation: infinite playing 1s ease-in-out;
+  animation-delay: 0.2s;
+}
+
+.line-2 {
+  animation: infinite playing 1s ease-in-out;
+  animation-delay: 0.5s;
+}
+
+.line-3 {
+  animation: infinite playing 1s ease-in-out;
+  animation-delay: 0.6s;
+}
+
+.line-4 {
+  animation: infinite playing 1s ease-in-out;
+  animation-delay: 0s;
+}
+
+.line-5 {
+  animation: infinite playing 1s ease-in-out;
+  animation-delay: 0.4s;
+}
+
+@keyframes playing {
+  0% {
+    transform: scaleY(0.1);
+  }
+
+  33% {
+    transform: scaleY(0.6);
+  }
+
+  66% {
+    transform: scaleY(0.9);
+  }
+
+  100% {
+    transform: scaleY(0.1);
+  }
+}
+.titulo-playlist{
+  font-family: 'Great Vibes';
+  font-size: 70px;
+  color: #570a1b;
+  margin-top: 30px;
+  text-align: center;
+}
+
+/****************** MEDIA QUERIES SECTION PLAYLIST SPOTIFY ********************/
+
+@media (min-width: 412px) and (max-width: 916px){
+
+    .titulo-playlist h2{
+      font-size: 2rem;
+    }
+    .card{
+      width: 95%;
+    }
+    .texts p, .tittle-1{
+      font-size: 1rem;
+    }
+}
+
+/****************** SECTION SOBRE ********************/
+
+.fondo{
+  background-color:rgba(252, 244, 236, 0.405) ;
+  
+}
+.titulo-sobre{
+    font-family: 'Great Vibes';
+    font-size: 100px;
+    color: #570a1b;
+    margin-top: 30px;
+    text-align: center;
+}
+.card-sobre{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+
+/****************** MEDIA QUERIES SECTION SOBRE ********************/
+
+@media (min-width: 412px) and (max-width: 916px){
+
+  #regalo{
+    font-size: 2rem;
+  }
+
+}
+
+/****************** SECTION PAGO EN LINEA ********************/
+
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 160px;
+  perspective: 1000px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 800px;
+}
+
+.heading_8264 {
+  position: absolute;
+  letter-spacing: .2em;
+  font-size: 0.5em;
+  top: 2em;
+  left: 18.6em;
+}
+
+.logo {
+  position: absolute;
+  top: 6.8em;
+  left: 14.7em;
+}
+
+.chip {
+  position: absolute;
+  top: 2.3em;
+  left: 1.5em;
+}
+
+.contactless {
+  position: absolute;
+  top: 3.5em;
+  left: 12.4em;
+}
+
+.number {
+  position: absolute;
+  font-weight: bold;
+  font-size: 18px;
+  top: 4em;
+  left: 1em;
+}
+
+.valid_thru {
+  position: absolute;
+  font-weight: bold;
+  top: 635.8em;
+  font-size: .01em;
+  left: 140.3em;
+}
+
+.date_8264 {
+  position: absolute;
+  font-weight: bold;
+  font-size: 15px;
+  top: 0.6em;
+  left: 6em;
+}
+
+.name {
+  position: absolute;
+  font-weight: bold;
+  font-size: 20px;
+  top: 5.6em;
+  left: 0.6em;
+}
+
+.strip {
+  position: absolute;
+  background-color: rgb(240, 23, 23);
+  width: 15em;
+  height: 1.5em;
+  top: 4em;
+  background: repeating-linear-gradient(
+    45deg,
+    #303030,
+    #303030 10px,
+    #202020 10px,
+    #202020 20px
+  );
+}
+
+.mstrip {
+  position: absolute;
+  background-color: rgb(255, 255, 255);
+  width: 8em;
+  height: 0.8em;
+  top: 2em;
+  left: .8em;
+  border-radius: 2.5px;
+}
+
+.sstrip {
+  position: absolute;
+  background-color: rgb(255, 255, 255);
+  width: 1em;
+  height: 0.8em;
+  top: 5em;
+  left: 10em;
+  border-radius: 2.5px;
+}
+
+.code {
+  font-weight: bold;
+  text-align: center;
+  margin: .2em;
+  color: black;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-card-front, .flip-card-back {
+  box-shadow: 0 8px 14px 0 rgba(0,0,0,0.2);
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-radius: 1rem;
+}
+
+.flip-card-front {
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 2px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -1px 0px inset;
+  background-color: #171717;
+}
+
+.flip-card-back {
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 2px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -1px 0px inset;
+  background-color: #171717;
+  transform: rotateY(180deg);
+}
+
+
+/****************** MEDIA QUERIES SECTION PAGO EN LINEA ********************/
+
+@media (min-width: 412px) and (max-width: 916px){
+
+  .flip-card-front{
+    left: -750px;
+    margin-top: 30px;
+    width: 100%;
+  }
+
+}
+
+
+
+
+
+/****************** SECTION CONFIRMACION DE AISTENCIA ********************/
+
+#form-rsvp{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.titulo-asistencia{
+  font-family: 'Great Vibes';
+  font-size: 100px;
+  color: #570a1b;
+  margin-top: 30px;
+  text-align: center;
+}
+
+/****************** MEDIA QUERIES ********************/
+
+@media (min-width: 412px) and (max-width: 916px){
+
+  .titulo-asistencia{
+    font-size: 3rem;
+    margin-top: 70px;
+  }
+  #form-rsvp{
+    width: 100%;
+  }
+  /* Asegúrate de que el contenedor principal no tenga overflow no deseado */
+body, html {
+  overflow-x: hidden; /* Oculta cualquier desbordamiento horizontal global */
+}
+
+
+
+}
