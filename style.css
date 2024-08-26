@@ -59,9 +59,7 @@ body{
 .names-hero{
   font-family: 'Dancing Script';
   font-size: 150px;
-  background-image: var(--gradiente-vino);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: white;
 }
 .rsvp{
     margin-top: 1rem;
@@ -70,7 +68,7 @@ body{
 /****************** MEDIA QUERIES NAVBAR ********************/
 
 
-@media (min-width: 375px) and (max-width: 916px) {
+@media (min-width: 360px) and (max-width: 916px) {
   
   html{
     scroll-behavior: smooth;
@@ -102,7 +100,7 @@ body{
   background-image:linear-gradient(
     rgba(0, 0, 0, 0.275), /* Color negro con opacidad del 50% */
     rgba(0, 0, 0, 0.462) /* Color negro con opacidad del 50% */
-), url('img/hero.jpg');
+), url('img/hero.jpeg');
   background-size: cover; 
   background-position: center; 
   background-repeat: no-repeat;
@@ -123,7 +121,7 @@ body{
 .hero, h2{
     width: 100%;
     font-size: 100px;
-    color: #570a1b;
+    color: #6d1d1d;
 }
 .hero-p{
   width: 100%;
@@ -138,9 +136,7 @@ body{
 }
 .hero-p1{
   font-family: 'Dancing Script';
-  background-image: var(--gradiente-vino);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #ffffff;
   display: flex; 
   align-items: center; 
   justify-content: center; 
@@ -155,23 +151,26 @@ body{
 /****************** MEDIA QUERIES HEADER ********************/
 
 
-@media (min-width: 375px) and (max-width: 916px) {
+@media (min-width: 360px) and (max-width: 916px) {
   
   .header{
       
       background-position: top; /* La imagen se alinea arriba */
-      height: 50vh; /* Reduce la altura de la sección hero */
+      height: 70vh; /* Reduce la altura de la sección hero */
       padding: 20px; /* Añade padding para dar margen alrededor del contenido */
   }
   .names-hero{
-    font-size: 2rem;
+    font-size: 45px;
     margin-top: -30px;
+    
   }
   .hero-p{
-    font-size: 2rem;
+    font-size: 3rem;
+    margin-top: 6rem;
   }
   .hero-p1{
-    font-size: 2rem;
+    font-size: 3rem;
+    margin-top: 6rem;
   }
 }
 
@@ -189,9 +188,7 @@ body{
 }
 
 #countdown-timer div {
-  background-image: linear-gradient(0deg, rgba(244,187,7,1) 0%, rgb(197, 161, 45) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+  color: white;
   padding: 10px;
   border-radius: 5px;
   font-size: 60px;
@@ -208,7 +205,7 @@ body{
 
 /****************** MEDIA QUERIES COUNTDOWN ********************/
 
-@media (min-width: 375px) and (max-width: 916px){
+@media (min-width: 360px) and (max-width: 916px){
 
       .countdown {
         flex-direction: column; /* Cambiar a columna en móviles */
@@ -216,11 +213,11 @@ body{
     }
 
     #countdown-timer div {
-        font-size: 20px; /* Tamaño de fuente más pequeño */
+        font-size: 25px; /* Tamaño de fuente más pequeño */
         margin-bottom: 10px; /* Espacio entre los elementos */
     }
     #countdown-timer span {
-      font-size: 20px; /* Tamaño de fuente más pequeño */
+      font-size: 40px; /* Tamaño de fuente más pequeño */
       margin-bottom: 10px; /* Espacio entre los elementos */
   }
 
@@ -254,7 +251,7 @@ body{
 
 /****************** MEDIA QUERIES PADRES ********************/
 
-@media (min-width: 375px) and (max-width: 916px){
+@media (min-width: 360px) and (max-width: 916px){
 
   .padres h2{
     font-size: 2rem;
@@ -309,9 +306,10 @@ body{
     padding: 16px;
 }
 .card-content h3{
-    font-size: 25px;
     margin-bottom: 8px;
     color: #ffffff;
+    font-family: 'Dancing Script';
+    font-size: 30px;
 }
 .card-content p{
     color: #ffffff;
@@ -323,7 +321,7 @@ body{
 
 /****************** MEDIA QUERIES UBICACION ********************/
 
-@media (min-width: 375px) and (max-width: 916px){
+@media (min-width: 360px) and (max-width: 916px){
 
   .titulo{
     margin-bottom: -20%;
@@ -336,7 +334,7 @@ body{
     height: 60vh;
   }
   .card-content h3{
-    font-size: 16px;
+    font-size: 25px;
   }
   .card-content p{
     font-size: 16px;
@@ -623,7 +621,7 @@ body{
 
 /****************** MEDIA QUERIES SECTION PLAYLIST SPOTIFY ********************/
 
-@media (min-width: 375px) and (max-width: 916px){
+@media (min-width: 360px) and (max-width: 916px){
 
     .titulo-playlist h2{
       font-size: 2rem;
@@ -659,7 +657,7 @@ body{
 
 /****************** MEDIA QUERIES SECTION SOBRE ********************/
 
-@media (min-width: 375px) and (max-width: 916px){
+@media (min-width: 360px) and (max-width: 916px){
 
   #regalo{
     font-size: 2rem;
@@ -817,7 +815,7 @@ body{
 
 /****************** MEDIA QUERIES SECTION PAGO EN LINEA ********************/
 
-@media (min-width: 375px) and (max-width: 916px){
+@media (min-width: 360px) and (max-width: 916px){
 
   .flip-card-front{
     left: -750px;
@@ -848,7 +846,7 @@ body{
 
 /****************** MEDIA QUERIES ********************/
 
-@media (min-width: 375px) and (max-width: 916px){
+@media (min-width: 360px) and (max-width: 916px){
 
   .titulo-asistencia{
     font-size: 3rem;
