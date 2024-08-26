@@ -20,7 +20,7 @@ body{
 }
 
 
-@media (min-width: 375px) and (max-width: 916px) {
+@media (min-width: 360px) and (max-width: 916px) {
   
   body{
     padding: 0;
@@ -160,17 +160,17 @@ body{
       padding: 20px; /* Añade padding para dar margen alrededor del contenido */
   }
   .names-hero{
-    font-size: 45px;
+    font-size: 40px;
     margin-top: -30px;
     
   }
   .hero-p{
     font-size: 3rem;
-    margin-top: 6rem;
+    margin-top: 1rem;
   }
   .hero-p1{
     font-size: 3rem;
-    margin-top: 6rem;
+    margin-top: 3rem;
   }
 }
 
