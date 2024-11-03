@@ -20,7 +20,7 @@ body{
 }
 
 
-@media (min-width: 360px) and (max-width: 916px) {
+/* @media (min-width: 360px) and (max-width: 916px) {
   
   body{
     padding: 0;
@@ -29,7 +29,7 @@ body{
     width: 100%;
   }
 
-}
+} */
 
 
 /****************** SECTION NAVBAR ********************/
@@ -150,13 +150,32 @@ body{
 
 /****************** MEDIA QUERIES HEADER ********************/
 
+@media (max-width: 480px) {
 
-@media (min-width: 360px) and (max-width: 916px) {
+    .header{
+      background-position: top; /* La imagen se alinea arriba */
+      width: 100%;
+      height: auto; /* Reduce la altura de la sección hero */
+      padding: 20px; /* Añade padding para dar margen alrededor del contenido */
+  }
+  .names-hero{
+    font-size: 40px;
+    margin-top: -30px;
+  }
+  .hero-p{
+    font-size: 3rem;
+    margin-top: 1rem;
+  }
+  .hero-p1{
+    font-size: 2.5rem;
+  }
+}
+@media (max-width: 768px) {
   
   .header{
       
       background-position: top; /* La imagen se alinea arriba */
-      height: 65vh; /* Reduce la altura de la sección hero */
+      height: auto; /* Reduce la altura de la sección hero */
       padding: 20px; /* Añade padding para dar margen alrededor del contenido */
   }
   .hero{
