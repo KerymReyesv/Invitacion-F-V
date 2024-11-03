@@ -353,7 +353,7 @@ body{
 
 /****************** MEDIA QUERIES UBICACION ********************/
 
-@media (min-width: 360px) and (max-width: 916px){
+@media (max-width: 480px){
 
   .titulo{
     margin-bottom: -20%;
@@ -363,7 +363,7 @@ body{
   }
   .card-ubi{
     width: 80%;
-    height: 55vh;
+    
   }
   .card-content h3{
     font-size: 30px;
@@ -372,8 +372,9 @@ body{
     font-size: 25px;
   }
   .ubi-container{
-    margin-bottom: -4rem;
+    height: auto;
   }
+
 }
 
 /***************************** BUTTON UBICACION *************************/ 
