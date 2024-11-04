@@ -707,182 +707,170 @@ body{
 
 }
 
-/****************** SECTION PAGO EN LINEA ********************/
-
-.flip-card {
-  background-color: transparent;
-  width: 300px;
-  height: 160px;
-  perspective: 1000px;
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-left: 800px;
-}
-
-.heading_8264 {
-  position: absolute;
-  letter-spacing: .2em;
-  font-size: 0.5em;
-  top: 2em;
-  left: 18.6em;
-}
-
-.logo {
-  position: absolute;
-  top: 6.8em;
-  left: 14.7em;
-}
-
-.chip {
-  position: absolute;
-  top: 2.3em;
-  left: 1.5em;
-}
-
-.contactless {
-  position: absolute;
-  top: 3.5em;
-  left: 12.4em;
-}
-
-.number {
-  position: absolute;
-  font-weight: bold;
-  font-size: 18px;
-  top: 4em;
-  left: 1em;
-}
-
-.valid_thru {
-  position: absolute;
-  font-weight: bold;
-  top: 635.8em;
-  font-size: .01em;
-  left: 140.3em;
-}
-
-.date_8264 {
-  position: absolute;
-  font-weight: bold;
-  font-size: 15px;
-  top: 0.6em;
-  left: 6em;
-}
-
-.name {
-  position: absolute;
-  font-weight: bold;
-  font-size: 20px;
-  top: 5.6em;
-  left: 0.6em;
-}
-
-.strip {
-  position: absolute;
-  background-color: rgb(240, 23, 23);
-  width: 15em;
-  height: 1.5em;
-  top: 4em;
-  background: repeating-linear-gradient(
-    45deg,
-    #303030,
-    #303030 10px,
-    #202020 10px,
-    #202020 20px
-  );
-}
-
-.mstrip {
-  position: absolute;
-  background-color: rgb(255, 255, 255);
-  width: 8em;
-  height: 0.8em;
-  top: 2em;
-  left: .8em;
-  border-radius: 2.5px;
-}
-
-.sstrip {
-  position: absolute;
-  background-color: rgb(255, 255, 255);
-  width: 1em;
-  height: 0.8em;
-  top: 5em;
-  left: 10em;
-  border-radius: 2.5px;
-}
-
-.code {
-  font-weight: bold;
-  text-align: center;
-  margin: .2em;
-  color: black;
-}
-
-.flip-card-inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  transition: transform 0.8s;
-  transform-style: preserve-3d;
-}
-
-.flip-card-front, .flip-card-back {
-  box-shadow: 0 8px 14px 0 rgba(0,0,0,0.2);
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  border-radius: 1rem;
-}
-
-.flip-card-front {
-  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 2px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -1px 0px inset;
-  background-color: #171717;
-}
-
-.flip-card-back {
-  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 2px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -1px 0px inset;
-  background-color: #171717;
-  transform: rotateY(180deg);
-}
-
-
-/****************** MEDIA QUERIES SECTION PAGO EN LINEA ********************/
-
-@media (min-width: 360px) and (max-width: 916px){
-
-  .flip-card-front{
-    left: -750px;
-    margin-top: 30px;
-    width: 100%;
-  }
-
-}
-
-
-
-
-
 /****************** SECTION CONFIRMACION DE AISTENCIA ********************/
 
-#form-rsvp{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 .titulo-asistencia{
   font-family: 'Great Vibes';
   font-size: 100px;
   color: #570a1b;
   text-align: center;
+}
+
+.button2 {
+  display: inline;
+  transition: all 0.2s ease-in;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  color: #090909;
+  padding: 0.7em 3.3em 0.7em 1.7em;
+  font-size: 18px;
+  border-radius: 0.5em;
+  background: #e8e8e8;
+  border: 1px solid #e8e8e8;
+  box-shadow: 6px 6px 12px #c5c5c5,
+             -6px -6px 12px #ffffff;
+}
+
+.button2 > svg {
+  height: 30px;
+  position: absolute;
+  padding: 0px 5px;
+  margin-top: -4px;
+}
+
+.button2:active {
+  color: #666;
+  box-shadow: inset 4px 4px 12px #c5c5c5,
+             inset -4px -4px 12px #ffffff;
+}
+
+.button2:before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) scaleY(1) scaleX(1.25);
+  top: 100%;
+  width: 140%;
+  height: 180%;
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: 50%;
+  display: block;
+  transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+  z-index: -1;
+}
+
+.button2:after {
+  content: "";
+  position: absolute;
+  left: 55%;
+  transform: translateX(-50%) scaleY(1) scaleX(1.45);
+  top: 180%;
+  width: 160%;
+  height: 190%;
+  background-color: #009087;
+  border-radius: 50%;
+  display: block;
+  transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+  z-index: -1;
+}
+
+.button2:hover {
+  color: #ffffff;
+  border: 1px solid #009087;
+}
+
+.button2:hover:before {
+  top: -35%;
+  background-color: #009087;
+  transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+}
+
+.button2:hover:after {
+  top: -45%;
+  background-color: #009087;
+  transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+}
+
+@media (max-width: 460px){
+  
+.button2 {
+  display: inline;
+  transition: all 0.2s ease-in;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  color: #090909;
+  padding: 0.7em 3.3em 0.7em 1.7em;
+  font-size: 18px;
+  border-radius: 0.5em;
+  background: #e8e8e8;
+  border: 1px solid #e8e8e8;
+  box-shadow: 6px 6px 12px #c5c5c5,
+             -6px -6px 12px #ffffff;
+}
+
+.button2 > svg {
+  height: 30px;
+  position: absolute;
+  padding: 0px 5px;
+  margin-top: -4px;
+  display: inline;
+}
+
+.button2:active {
+  color: #666;
+  box-shadow: inset 4px 4px 12px #c5c5c5,
+             inset -4px -4px 12px #ffffff;
+}
+
+.button2:before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) scaleY(1) scaleX(1.25);
+  top: 100%;
+  width: 140%;
+  height: 180%;
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: 50%;
+  display: block;
+  transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+  z-index: -1;
+}
+
+.button2:after {
+  content: "";
+  position: absolute;
+  left: 55%;
+  transform: translateX(-50%) scaleY(1) scaleX(1.45);
+  top: 180%;
+  width: 160%;
+  height: 190%;
+  background-color: #009087;
+  border-radius: 50%;
+  display: block;
+  transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+  z-index: -1;
+}
+
+.button2:hover {
+  color: #ffffff;
+  border: 1px solid #009087;
+}
+
+.button2:hover:before {
+  top: -35%;
+  background-color: #009087;
+  transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+}
+
+.button2:hover:after {
+  top: -45%;
+  background-color: #009087;
+  transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+}
+
 }
 
 /****************** MEDIA QUERIES ********************/
@@ -891,106 +879,6 @@ body{
 
   .titulo-asistencia{
     font-size: 3rem;
-    margin-top: 30px;
+    margin-top: 3rem;
   }
-  .asistencia{
-    margin-top: -6rem;
-  }
-  #form-rsvp{
-    width: 100%;
-  }
-  /* Asegúrate de que el contenedor principal no tenga overflow no deseado */
-body, html {
-  overflow-x: hidden; /* Oculta cualquier desbordamiento horizontal global */
 }
-
-
-}
-
-.titulo-name{
-  font-family: 'Great Vibes';
-  font-size: 3rem;
-  color: #570a1b;
-}
-.placeholder{
-  font-family: 'Great vibes';
-  font-size: 2rem;
-  color: #570a1b;
-}
-  
-#suggestions {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  border: 1px solid #ccc;
-  max-height: 100px;
-  overflow-y: auto;
-}
-
-#suggestions li {
-  padding: 10px;
-  background-color: #f9f9f9;
-  cursor: pointer;
-}
-
-#suggestions li:hover {
-  background-color: #ddd;
-}
-
-
-.btn-asist{
-  outline: 0;
-  border: 0;
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  max-width: 13rem;
-  height: 50px;
-  border-radius: 0.5em;
-  box-shadow: 0 0.625em 1em 0 rgba(30, 143, 255, 0.35);
-  overflow: hidden;
- }
- 
- .btn-asist div {
-  transform: translateY(0px);
-  width: 100%;
- }
- 
- 
- .btn-asist div {
-  transition: 0.6s cubic-bezier(.16,1,.3,1);
- }
- 
- .btn-asist div span {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 50px;
-  padding: 0.75em 1.125em;
- }
- 
- .btn-asist div:nth-child(1) {
-  background-color: #722525;
- }
- 
- .btn-asist div:nth-child(2) {
-  background-color: #21dc62;
- }
- 
- .btn-asist:hover {
-  box-shadow: 0 0.625em 1em 0 rgba(33, 220, 98, 0.35);
- }
- 
- .btn-asist:hover div {
-  transform: translateY(-50px);
- }
- 
- .btn-asist p {
-  font-size: 17px;
-  font-weight: bold;
-  color: #ffffff;
- }
- 
- .btn-asist:active {
-  transform: scale(0.95);
- }
